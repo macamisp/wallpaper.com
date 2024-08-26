@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - WallPeper</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-content {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 2em;
+            margin-top: 2em;
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+        .about-content h2 {
+            color: var(--neon-pink);
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 1em;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin-bottom: 1em;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        .feature-list li::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--neon-purple);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>WallPeper LK</h1>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container" role="main">
+        <section class="about-content">
+            <h2>About WallPeper</h2>
+            <p>Welcome to WallPeper, your portal to the cyberpunk realm of digital art and futuristic aesthetics. We curate and create high-quality wallpapers that transform your devices into windows to neon-lit cityscapes and abstract digital dreamscapes.</p>
+            
+            <h3>Our Mission</h3>
+            <p>At WallPeper, we strive to push the boundaries of digital art, bringing you cutting-edge designs that blend the retro and the futuristic. Our goal is to provide you with visually stunning wallpapers that inspire creativity and transport you to otherworldly dimensions.</p>
+            
+            <h3>Features</h3>
+            <ul class="feature-list">
+                <li>Curated collection of high-resolution wallpapers</li>
+                <li>Regular updates with fresh, original designs</li>
+                <li>Easy-to-use category filtering for quick browsing</li>
+                <li>Compatibility with various devices and screen resolutions</li>
+                <li>Free downloads for personal use</li>
+            </ul>
+            
+            <h3>Join the Cyberpunk Revolution</h3>
+            <p>Whether you're a cyberpunk enthusiast, a digital art lover, or someone looking to add a touch of neon-soaked futurism to your screens, WallPeper is your go-to destination. Dive into our collection and let your devices reflect your passion for the digital frontier.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

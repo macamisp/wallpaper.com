@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WallPeper</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-content {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 2em;
+            margin-top: 2em;
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+        .contact-content h2 {
+            color: var(--neon-pink);
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 1em;
+        }
+        .contact-form {
+            display: grid;
+            gap: 1.5em;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            margin-bottom: 0.5em;
+            color: var(--neon-blue);
+        }
+        .form-group input,
+        .form-group textarea {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--neon-purple);
+            border-radius: 5px;
+            padding: 0.5em;
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+        .submit-btn {
+            background-color: var(--neon-purple);
+            color: var(--bg-color);
+            border: none;
+            padding: 0.7em 1.2em;
+            border-radius: 25px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: var(--neon-blue);
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>WallPeper LK</h1>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container" role="main">
+        <section class="contact-content">
+            <h2>Contact Us</h2>
+            <p>Have a question, suggestion, or just want to say hello? Drop us a message using the form below, and we'll get back to you as soon as possible.</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
